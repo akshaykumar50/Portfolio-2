@@ -1,0 +1,182 @@
+*{
+    font-family: "Playfair Display", serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.main{
+    background-image: url('./images/background.jpg');
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+.logo{
+    width: 100px;
+    margin: 10px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 5px;
+    justify-content: space-between;
+    margin: auto;
+
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:hover{
+    color: red;
+}
+
+.info{
+    margin-top: 8%;
+    margin-left: 10%;
+}
+.info span{
+    color: blue;
+    font-size: 30px;
+}
+pre{
+    text-decoration: underline;
+    margin: 10px;
+}
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 25%;
+}
+.image img{
+    position: absolute;
+    height: 100%;
+    left: 40%;
+    transform: translate(-55%);
+    transition: left 2s ease;
+}
+.image:hover .prsn{
+    left: 55%;
+}
+
+.box{
+    display: inline-block;
+}
+.box img{
+    width: 360px;
+    margin-left: 40px;
+    padding: 10px;
+}
+.box img:hover{
+    scale: 1.03;
+    box-shadow: 3px 6px 8px black;
+}
+.h2{
+    background-color: rgb(22, 85, 204);
+    color: aliceblue;
+    text-align: center;
+    margin: 20px 10px;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.col{
+    /* height: 400px; */
+    width: 300px;
+    border: 3px inset brown;
+    background: linear-gradient(to top,rgb(188, 176, 176)50%,rgb(209, 104, 104)50%);
+    background-size: 100% 200%;
+    transition: all 2s;
+    
+}
+.col:hover{
+    background-position: left bottom;
+    box-shadow: 2px 3px 4px black;
+}
+.col img{
+    width: 100%;
+    
+}
+.col h4{
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+}
+.col p{
+    text-align: justify;
+    padding: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+form{
+    width: 500px;
+    margin-left: 400px;
+}
+
+.input{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+
+button{
+    background-color: black;
+    color: aliceblue;
+    padding: 5px;
+}
+.cv{
+    background-color: green;
+    color: azure;
+    width: 200px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 30%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(22, 85, 204); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(34, 74, 147); 
+}
